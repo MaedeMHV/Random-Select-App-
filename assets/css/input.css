@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply h-screen flex items-center justify-center bg-neutral-900;
+}
+section {
+  @apply flex flex-col items-center justify-center bg-neutral-800 h-[60%] overflow-hidden w-[60%] rounded-md shadow-lg gap-5 p-4;
+}
+section p {
+  @apply w-2/3 text-center text-white justify-self-start;
+}
+section #textArea {
+  @apply rounded-md;
+}
+section .tags {
+  @apply flex flex-row gap-5 flex-wrap text-white overflow-x-scroll;
+}
+section .tags .tag {
+  @apply bg-lime-600 rounded-3xl py-2 px-4;
+}
+section .tags .tag.selected {
+  @apply bg-lime-900;
+}
+section .tags .tag.chosen {
+  @apply bg-orange-600;
+}
